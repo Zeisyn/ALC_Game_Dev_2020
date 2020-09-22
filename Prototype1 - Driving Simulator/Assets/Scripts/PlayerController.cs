@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     
-    
-    
     // Start is called before the first frame update
     void Start()
     {
