@@ -31,5 +31,12 @@ public class PlayerController : MonoBehaviour
         // Keeps player in bounds --Right side
         if (transform.position.x > xRange) {
         transform.position = new Vector3(xRange, transform.position.y, transform.position.z);}
+        
+        //Launch Projectile from player on Keypress
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+        
     }
 }
