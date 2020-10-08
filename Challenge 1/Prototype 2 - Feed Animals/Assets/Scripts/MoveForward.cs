@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float speed = 20;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //movement speed of game object
+    public float speed = 10;
+
 
     // Update is called once per frame
     void Update()
     {
+        //moves the animals forward 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }

@@ -11,11 +11,6 @@ public class PlayerController : MonoBehaviour
     
     public GameObject projectilePrefab;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,6 +30,8 @@ public class PlayerController : MonoBehaviour
         {
         transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+        
+        
         
         //Launch Projectile from player on Keypress
         if (Input.GetKeyDown(KeyCode.Space))
