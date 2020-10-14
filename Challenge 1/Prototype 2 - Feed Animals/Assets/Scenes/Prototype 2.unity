@@ -137,7 +137,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -153,8 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4415f18b2cdaf46d094c87247e012c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalPrefabs: []
-  animalIndex: 1
+  animalPrefabs:
+  - {fileID: 667406670736338956, guid: 46b480e758a7e43baa9a255426009e77, type: 3}
+  - {fileID: 8307503863672591383, guid: 69096dbfdaa17476cbfdf888e8dc4728, type: 3}
+  - {fileID: 675759171040443944, guid: f152fd6580ee44866a58385ee9cac40e, type: 3}
+  - {fileID: 1952084211882033384, guid: 3c658d47d21054cdaa14827c5a64f685, type: 3}
 --- !u!4 &111421151
 Transform:
   m_ObjectHideFlags: 0
@@ -716,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.02
+      value: 29.18
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       propertyPath: m_LocalRotation.x
