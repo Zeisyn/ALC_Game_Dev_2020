@@ -17,12 +17,16 @@ public class OutOfBounds : MonoBehaviour
     {
         if(transform.position.z > topBounds) 
         {
+            Debug.Log("Game Over");
             Destroy(gameObject);
+            Time.timeScale = 0;
         }
 
-        if(transform.position.z < lowerBounds)
+        else if(transform.position.z < lowerBounds)
         {
+            
             Destroy(gameObject);
+            
         }
 
     }
