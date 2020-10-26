@@ -16,11 +16,6 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomAnimals", startDelay, spawnInterval);
     }
     
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void SpawnRandomAnimals()
     {
         //Randomly generates animal Index and spawn position
