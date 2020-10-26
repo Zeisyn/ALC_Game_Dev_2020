@@ -886,6 +886,7 @@ GameObject:
   - component: {fileID: 8307503863672591384}
   - component: {fileID: 6944933962293062092}
   - component: {fileID: -202109955023457702}
+  - component: {fileID: -9184232216057422632}
   m_Layer: 0
   m_Name: Animal_Cow_Brown
   m_TagString: Untagged
@@ -965,8 +966,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.92405, y: 32.531555, z: 47.255768}
-  m_Center: {x: -0.013089179, y: 15.241634, z: 0.3531628}
+  m_Size: {x: 12.92405, y: 37.88803, z: 47.255768}
+  m_Center: {x: -0.013089179, y: 12.563395, z: 0.35316148}
 --- !u!54 &-202109955023457702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -983,6 +984,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-9184232216057422632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8307503863672591383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c24fca350ee4d2fbd9d47fd06e6472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8307503863681155132
 GameObject:
   m_ObjectHideFlags: 0
