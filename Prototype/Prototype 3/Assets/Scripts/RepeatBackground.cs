@@ -22,6 +22,5 @@ public class RepeatBackground : MonoBehaviour
         {
             transform.position = startPos;
         }
-
     }
 }

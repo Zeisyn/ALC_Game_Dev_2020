@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
     public bool gameOver = false;
     public Animator playerAnim;
-    
+    public ParticleSystem explosionParticle;
     
 
     void Start()
@@ -44,8 +44,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
-            gameOver = true;
             Debug.Log("Game Over");
+            gameOver = true;
+            playerAnim.SetBool("Death_b", true);
+            playerAnim.SetInteger("DeathType", 1);
+            explosionParticle.Play();
         }
+
     }
 }
