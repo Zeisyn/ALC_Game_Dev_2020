@@ -17,8 +17,8 @@ public class MoveLeftX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // If game is not over, move to the left
-        if (playerControllerScript.gameOver)
+        // If game is not over, move objectto the left
+        if (playerControllerScript.gameOver == false)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }
