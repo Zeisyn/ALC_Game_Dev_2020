@@ -29,8 +29,8 @@ public class PlayerControllerX : MonoBehaviour
 
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);
-
     }
+
 
     // If Player collides with powerup, activate powerup
     private void OnTriggerEnter(Collider other)
@@ -44,6 +44,7 @@ public class PlayerControllerX : MonoBehaviour
         }
     }
 
+
     // Coroutine to count down powerup duration
     IEnumerator PowerupCoolDown()
     {
@@ -51,6 +52,7 @@ public class PlayerControllerX : MonoBehaviour
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
     }
+
 
     // If Player collides with enemy
     private void OnCollisionEnter(Collision collision)
