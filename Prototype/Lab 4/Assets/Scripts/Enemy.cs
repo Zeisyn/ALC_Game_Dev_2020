@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 5;
-    public float zRange = 5;
+    public float zRange = 10.0f;
     // Start is called before the first frame update
     void Start()
     {

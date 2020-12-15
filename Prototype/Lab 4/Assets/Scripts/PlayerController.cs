@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 5.0f;
-    public float xRange = 5.0f;
-    public float zRange = 5.0f;
+    public float xRange = 10.0f;
+    public float zRange = 10.0f;
     
     // Update is called once per frame
     void Update()
@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
         }
 
         // Destroys Objects if they go too far upwards. 
-        if (transform.position.z > zRange) 
+        if (transform.position.x > zRange) 
         {
-        Destroy(gameObject);
+        transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
 
         // Destroys Objects if they go too far down.
