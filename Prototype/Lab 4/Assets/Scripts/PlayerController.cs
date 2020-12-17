@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     public float xRange = 10.0f;
     public float zRange = 10.0f;
+    public bool gameOver = false;
     
+
     // Update is called once per frame
     void Update()
     {
@@ -25,8 +27,8 @@ public class PlayerController : MonoBehaviour
         transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        // Destroys Objects if they go too far upwards. 
-        if (transform.position.x > zRange) 
+        //Keeps Objects in if they go too far upwards. 
+        if (transform.position.z > zRange) 
         {
         transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
         }
@@ -44,5 +46,15 @@ public class PlayerController : MonoBehaviour
         //Move player forward/backwards on VerticalInput
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+
+        //GameOver 
+        if (transform.position.z < -10)
+        {
+            gameOver = true;
+            Debug.Log("Game Over");
+        } 
     }
+    
+    
+    
 }
