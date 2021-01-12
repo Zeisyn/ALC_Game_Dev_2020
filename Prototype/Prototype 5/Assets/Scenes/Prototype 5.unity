@@ -301,7 +301,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.682453
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -441,6 +441,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a0610e255334e6eb081c576dbff847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 2576089770166787809, guid: d72c1959e6c8749ee93443a71a72ccc8, type: 3}
+  - {fileID: 3402307099959519381, guid: 3a5e5179a1f884878a6ad94c82672941, type: 3}
+  - {fileID: 6237123247798221324, guid: e3b27a9f03e664e11a109fada4f866a6, type: 3}
+  - {fileID: 3220830774013905954, guid: a5cd77e388ac74a61be8d2e1f22c29db, type: 3}
 --- !u!4 &1351900411
 Transform:
   m_ObjectHideFlags: 0
@@ -587,7 +592,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 587ce71a1013945a88f4712db43be069, type: 2}
+  - {fileID: 2100000, guid: 755a8ab3a8f607b4eb3106d48b449755, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
