@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
     public GameObject powerupIndicator;
-    private float powerupStrength = 15.0f;
-    public bool hasPowerup;
     private GameObject focalPoint;
     private Rigidbody playerRb;
+<<<<<<< Updated upstream
     public float speed = 4.0f;
     public bool gameOver = false;
     
     
+=======
+    
+    private float powerupStrength = 15.0f;
+    public bool hasPowerup;
+    public float speed = 2.0f;
+
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
