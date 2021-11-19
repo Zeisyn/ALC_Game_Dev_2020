@@ -20,8 +20,10 @@ namespace Zenva.VR
         public UnityEvent onRelease;
 
         GrabController grabCtrl;
+
         Vector3 originalPosition;
-        quaternion originalRotation;
+        Quaternion originalRotation;
+
         Transform originalParent;
 
         Rigidbody rb;

@@ -51,6 +51,7 @@ namespace Zenva.VR
         devices = new List<InputDevice>();
         string featureLabel = Enum.GetName(typeof(FeatureOptions), feature);
 
+
         availableFeatures.TryGetValue(featureLabel, out selectedFeature);
 
     }
@@ -60,7 +61,7 @@ namespace Zenva.VR
 
         for (int i = 0; i < devices.Count; i++)
         {
-            if(devices[i].TryGetFeatureValue(selectedFeature, out inputValue) && InputValue)
+            if(devices[i].TryGetFeatureValue(selectedFeature, out InputValue) && InputValue)
             {
                 if(!isPressed)
                 {
